@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moon Cafe</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #100e0b;
+  color: #fff5e8;
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 22px;
+  text-align: center;
+  background: #21170f;
+  color: #e8b878;
+  font-size: 25px;
+  font-weight: bold;
+}
+.hero {
+  text-align: center;
+  padding: 75px 20px;
+  animation: appear 1s ease;
+}
+h1 { font-size: 48px; }
+h1 span { color: #e8b878; }
+p { color: #d2c0ad; }
+section { padding: 25px; }
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.card {
+  flex: 1;
+  min-width: 180px;
+  padding: 22px;
+  background: #211a13;
+  border: 1px solid #493521;
+  border-radius: 12px;
+  transition: .3s;
+}
+.card:hover {
+  transform: translateY(-7px);
+  border-color: #e8b878;
+}
+.price { color: #e8b878; font-weight: bold; }
+.btn {
+  display: inline-block;
+  padding: 13px 22px;
+  background: #e8b878;
+  color: #100e0b;
+  text-decoration: none;
+  border-radius: 7px;
+}
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+footer { text-align: center; padding: 25px; }
+</style>
+</head>
+<body>
+<header>☕ MOON CAFE</header>
+<div class="hero">
+  <h1>Даамдуу кофе,<br><span>жылуу маанай.</span></h1>
+  <p>Ар бир чыныда өзгөчө даам бар.</p>
+  <a class="btn" href="#menu">Менюну көрүү ↓</a>
+</div>
+<section id="menu">
+  <h2>Биздин меню</h2>
+  <div class="menu">
+    <div class="card">
+      <h3>☕ Капучино</h3>
+      <p>Жумшак сүт көбүгү менен кофе.</p>
+      <div class="price">180 сом</div>
+    </div>
+    <div class="card">
+      <h3>🥤 Латте</h3>
+      <p>Сүт кошулган даамдуу кофе.</p>
+      <div class="price">200 сом</div>
+    </div>
+    <div class="card">
+      <h3>🍰 Чизкейк</h3>
+      <p>Кофеге ылайыктуу десерт.</p>
+      <div class="price">250 сом</div>
+    </div>
+  </div>
+</section>
+<section>
+  <h2>Бизге келиңиз!</h2>
+  <p>Бишкек шаары · 09:00–22:00</p>
+  <a class="btn" href="tel:+996000000000">Чалуу</a>
+</section>
+<footer>© 2026 Moon Cafe</footer>
+</body>
+</html>
